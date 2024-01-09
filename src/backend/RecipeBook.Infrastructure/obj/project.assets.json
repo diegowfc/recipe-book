@@ -1,0 +1,91 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "RecipeBook.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/RecipeBook.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/RecipeBook.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RecipeBook.Domain/1.0.0": {
+      "type": "project",
+      "path": "../RecipeBook.Domain/RecipeBook.Domain.csproj",
+      "msbuildProject": "../RecipeBook.Domain/RecipeBook.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "RecipeBook.Domain >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "Y:\\RecipeBook\\src\\backend\\RecipeBook.Infrastructure\\RecipeBook.Infrastructure.csproj",
+      "projectName": "RecipeBook.Infrastructure",
+      "projectPath": "Y:\\RecipeBook\\src\\backend\\RecipeBook.Infrastructure\\RecipeBook.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "Y:\\RecipeBook\\src\\backend\\RecipeBook.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "Y:\\RecipeBook\\src\\backend\\RecipeBook.Domain\\RecipeBook.Domain.csproj": {
+              "projectPath": "Y:\\RecipeBook\\src\\backend\\RecipeBook.Domain\\RecipeBook.Domain.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.417\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
