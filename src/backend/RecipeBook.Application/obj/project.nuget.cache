@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "x18NkX4YhABlNje47PfjSKcCeCr76y/7pDh2UjaJfG7gWE5l9/g4zOs/POMZCIIuVw4SWpQChJHPVmegKcPiqQ==",
+  "dgSpecHash": "oAoE8AmmeLioIYnp39aJDuMMluWAnE7m3jVvrZrQ1Nvk0bblzMkumHr3G1PI/mFR1MhUYYwQeohB7yTbcAdMNA==",
   "success": true,
   "projectFilePath": "Y:\\RecipeBook\\src\\backend\\RecipeBook.Application\\RecipeBook.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

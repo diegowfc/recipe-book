@@ -1,3 +1,7 @@
+using Microsoft.Extensions.Configuration;
+using RecipeBook.Domain.extension;
+using RecipeBook.Infrastructure.migrations;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -22,4 +26,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+UpdateDatabase();
 app.Run();
+
+void UpdateDatabase()
+{
+    var connection = builder.Configuration.GetConnectionString();
+    var databaseName = builder.Configuration.GetDatabaseName();
+
+    Database.CreateDatabase(connection, databaseName);
+}
