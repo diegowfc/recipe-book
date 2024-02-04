@@ -245,6 +245,22 @@
               "target": "Package",
               "version": "[2.1.28, )"
             },
+            "FluentMigrator": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "FluentMigrator.Runner": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "FluentMigrator.Runner.Postgres": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.3.5, )"
