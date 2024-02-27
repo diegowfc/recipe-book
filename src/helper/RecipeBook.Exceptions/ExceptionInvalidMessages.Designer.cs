@@ -122,5 +122,14 @@ namespace RecipeBook.Exceptions {
                 return ResourceManager.GetString("InvalidInputPhone", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a Erro desconhecido!.
+        /// </summary>
+        public static string UnknownError {
+            get {
+                return ResourceManager.GetString("UnknownError", resourceCulture);
+            }
+        }
     }
 }

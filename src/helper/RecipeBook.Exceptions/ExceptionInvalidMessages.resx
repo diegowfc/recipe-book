@@ -138,4 +138,7 @@
   <data name="InvalidInputPhone" xml:space="preserve">
     <value>O número de telefone deve estar no formato XX X XXXX-XXXX</value>
   </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Erro desconhecido!</value>
+  </data>
 </root>

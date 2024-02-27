@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using RecipeBook.API.Filters;
 using RecipeBook.Domain.extension;
 using RecipeBook.Infrastructure;
 using RecipeBook.Infrastructure.migrations;
@@ -13,6 +14,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddRepository(builder.Configuration);
+
+builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFilters)));
 
 
 var app = builder.Build();

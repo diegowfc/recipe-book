@@ -1,4 +1,5 @@
 ﻿using RecipeBook.Communication.Request;
+using RecipeBook.Exceptions.ExceptionBase;
 
 namespace RecipeBook.Application.UseCases.User.Register;
 
@@ -11,14 +12,14 @@ public class UseCaseRegisterUser
 
         if (!result.IsValid)
         {
-            var erroMessages = result.Errors.Select(err => err.ErrorMessage);
-            throw new Exception();
+            var errorMessages = result.Errors.Select(err => err.ErrorMessage).ToList();
+            throw new ValidationErrorsExceptions(errorMessages);
         }
     }
 
-    public Task Register(UserRegistrationRequestJSON request)
+    public async Task Register(UserRegistrationRequestJSON request)
     {
-        
+        Validate(request);
     }
 
     

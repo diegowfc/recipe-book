@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using RecipeBook.Application.UseCases.User.Register;
+using RecipeBook.Communication.Request;
 using RecipeBook.Exceptions;
 
 namespace RecipeBook.API.Controllers
@@ -8,9 +10,13 @@ namespace RecipeBook.API.Controllers
     public class WeatherForecastController : ControllerBase
     {
         [HttpGet(Name = "GetWeatherForecast")]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAsync()
         {
-            var message = ExceptionMessages.EmptyInputName;
+            var usecase = new UseCaseRegisterUser();
+            await usecase.Register(new UserRegistrationRequestJSON //Just for test now
+            {
+
+            });
             return Ok();
         }
     }
